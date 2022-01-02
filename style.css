@@ -447,8 +447,8 @@ footer {
     position: fixed;
     background: cover;
     background: linear-gradient(145deg, #123a68 50%, #3a7c54 115%);
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     z-index: -2;
