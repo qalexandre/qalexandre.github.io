@@ -1,6 +1,7 @@
 $(document).ready(function() {
+    let heightUpPage = parseInt(document.body.scrollHeight) - 800;
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100 && $(this).scrollTop() < 2500) {
+        if ($(this).scrollTop() > 100 && $(this).scrollTop() < heightUpPage) {
             $(".up-page").fadeIn();
         } else {
             $(".up-page").fadeOut();
