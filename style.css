@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Sarala:wght@400;700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +13,8 @@ html {
 }
 
 body {
+    height: 100%;
     font-size: 100%;
-    background: linear-gradient( 0deg, rgba(8, 103, 136, 0.5), rgba(8, 103, 136, 0.5)), #121420;
 }
 
 .up-page {
@@ -47,13 +48,19 @@ body {
     color: #ffffff;
 }
 
+.main {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .main .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 350px;
-    gap: 16px;
-    height: 550px;
+    justify-content: center;
 }
 
 .main .info .title {
@@ -68,25 +75,6 @@ body {
     font-weight: 700;
     font-size: 32px;
     color: #ffffff;
-}
-
-.main .options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: flex-end;
-}
-
-.main .options .options-text {
-    font-family: "Sarala", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.main .options .options-arrow {
-    width: 16px;
-    height: 16px;
 }
 
 .about {
@@ -343,4 +331,125 @@ footer {
 .socialmedia .socialmedia-image {
     width: 60px;
     height: 60px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .about .info {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about .info .info-image {
+        width: 150px;
+        height: 150px;
+    }
+    .about .info .info-text {
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+    }
+    .contact .contact-group .circle {
+        width: 60px;
+        height: 60px;
+    }
+    .contact .contact-info .circle .contact-image {
+        width: 30px;
+        height: 30px;
+    }
+    .contact .contact-info .contact-text {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .socialmedia .socialmedia-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .about .icons {
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+    }
+    .about .icons .icon-text {
+        width: 100%;
+    }
+    .about .about-title,
+    .skills .skills-title,
+    .projects .projects-title,
+    .contact .contact-title {
+        width: 100%;
+        font-size: 25px;
+    }
+    .projects .projects-top,
+    .projects .projects-bottom {
+        display: grid;
+        column-gap: 32px;
+        grid-template-rows: 50% 50%;
+        row-gap: 50px;
+        padding: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact .contact-group .circle {
+        width: 50px;
+        height: 50px;
+    }
+    .contact .contact-info .circle .contact-image {
+        width: 25px;
+        height: 25px;
+    }
+    .contact .contact-info .contact-text {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .skills .skills-top,
+    .skills .skills-middle,
+    .skills .skills-bottom {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 32px;
+        padding: 16px 0;
+    }
+    .skills .skill {
+        place-self: center;
+    }
+    .projects .project {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact .contact-info {
+        display: grid;
+        row-gap: 50px;
+    }
+    .contact .contact-group .circle {
+        width: 70px;
+        height: 70px;
+    }
+    .contact .contact-info .circle .contact-image {
+        width: 35px;
+        height: 35px;
+    }
+    .contact .contact-info .contact-text {
+        font-size: 16px;
+    }
+}
+
+#bg {
+    position: fixed;
+    background: cover;
+    background: linear-gradient(145deg, #123a68 50%, #3a7c54 115%);
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
 }

@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        console.log($(this).scrollTop());
         if ($(this).scrollTop() > 100 && $(this).scrollTop() < 2500) {
             $(".up-page").fadeIn();
         } else {
