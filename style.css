@@ -280,6 +280,89 @@ body {
   font-size: 18px;
 }
 
+.formations {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.formations .formations-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #2b9b62;
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #2b9b62;
+  margin: 0 auto;
+}
+
+.formations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formations .formation-4 {
+  margin-bottom: 30px;
+}
+
+.formations .formation {
+  display: grid;
+  grid-template-columns: 8% 35% 5%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.formations .circle {
+  width: 80px;
+  height: 80px;
+  background: #2dd881;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.formations .circle .circle-icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formations .formation .info {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+}
+
+.formations .formation .info .formation-title {
+  font-size: 21px;
+}
+
+.formations .formation .info .formation-info {
+  font-size: 15px;
+}
+
+.formations .formation .circle-min {
+  width: 50px;
+  height: 50px;
+  background: #2dd881;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+}
+.formations .formation .circle-min .circle-min-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .skills {
   background-color: #ffffff;
   width: 100%;
@@ -522,8 +605,8 @@ footer {
     width: 100%;
     font-size: 25px;
   }
-  .projects{
-      height: 100%;
+  .projects {
+    height: 100%;
   }
   .projects .projects-top,
   .projects .projects-bottom {
@@ -550,6 +633,12 @@ footer {
   .contact .contact-info .contact-text {
     font-size: 12px;
   }
+  .formations .formation {
+    grid-template-columns: 20% 60%;
+  }
+  .formations .formation .circle-min {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -574,7 +663,8 @@ footer {
   }
 }
 
-.projects .project,  .project img {
+.projects .project,
+.project img {
   background-color: none;
 }
 .projects {
