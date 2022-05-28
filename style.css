@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Sarala:wght@400;700&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 * {
   margin: 0;
   padding: 0;
@@ -109,49 +110,49 @@ body {
   display: none;
 }
 
-#check:checked ~ .menu-mobile a:hover {
+#check:checked~.menu-mobile a:hover {
   background: #2b9b62;
   font-weight: bold;
 }
 
-#check:checked ~ .menu-mobile {
+#check:checked~.menu-mobile {
   display: block;
   transform: translatex(-10px);
 }
 
-#check:checked ~ .menu-mobile a {
+#check:checked~.menu-mobile a {
   display: block;
   transform: translatex(0px);
 }
 
-#check:checked ~ .menu-mobile a:nth-child(1) {
+#check:checked~.menu-mobile a:nth-child(1) {
   transition-delay: 0.25s;
 }
 
-#check:checked ~ .menu-mobile a:nth-child(2) {
+#check:checked~.menu-mobile a:nth-child(2) {
   transition-delay: 0.5s;
 }
 
-#check:checked ~ .menu-mobile a:nth-child(3) {
+#check:checked~.menu-mobile a:nth-child(3) {
   transition-delay: 0.75s;
 }
 
-#check:checked ~ .menu-mobile a:nth-child(4) {
+#check:checked~.menu-mobile a:nth-child(4) {
   transition-delay: 1s;
 }
 
-#check:checked ~ .button-menu .top {
+#check:checked~.button-menu .top {
   top: 22px;
   transform: rotate(45deg);
   transition: 0.5s;
 }
 
-#check:checked ~ .button-menu .mid {
+#check:checked~.button-menu .mid {
   opacity: 0;
   transition: 0.5s;
 }
 
-#check:checked ~ .button-menu .bot {
+#check:checked~.button-menu .bot {
   top: 22px;
   transform: rotate(-45deg);
   transition: 0.5s;
@@ -354,6 +355,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .formations .formation .circle-min .circle-min-icon {
   width: 30px;
   height: 30px;
@@ -369,14 +371,27 @@ body {
   height: 100%;
 }
 
+
 .skills .skills-title {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #2b9b62;
   text-align: center;
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
   border-top: 1px solid #2b9b62;
+  width: 730px;
+  margin: 0 auto;
+}
+
+.skills .skills-subtitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2b9b62;
+  text-align: center;
+  padding: 0 40px 40px 40px;
+
   width: 730px;
   margin: 0 auto;
 }
@@ -421,7 +436,8 @@ body {
 .projects {
   background-color: #ffffff;
   width: 100%;
-  height: 70vh;
+  height: 100%;
+  padding-bottom: 30px;
 }
 
 .projects .projects-title {
@@ -436,18 +452,13 @@ body {
   margin: 0 auto;
 }
 
-.projects .projects-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.projects .projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  gap: 50px;
 }
 
-.projects .projects-bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 160px 0;
-}
 
 .projects .project {
   width: 360px;
@@ -545,32 +556,47 @@ footer {
     flex-direction: column;
     gap: 50px;
   }
+
   .about .info .info-image {
     width: 150px;
     height: 150px;
   }
+
   .about .info .info-text {
     text-align: justify;
     font-size: 20px;
     width: 100%;
   }
+
+
   .contact .contact-group .circle {
     width: 60px;
     height: 60px;
   }
+
   .contact .contact-info .circle .contact-image {
     width: 30px;
     height: 30px;
   }
+
   .contact .contact-info .contact-text {
     font-size: 16px;
   }
+
   .copyright {
     font-size: 12px;
   }
+
   .socialmedia .socialmedia-image {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects .projects-grid{
+    grid-template-columns: 100%;
+    column-gap: 0;
   }
 }
 
@@ -578,26 +604,33 @@ footer {
   .button-menu {
     display: block;
   }
+
   .menu {
     display: none;
   }
+
   .main {
     height: 100vh;
   }
+
   .main .info .title {
     font-size: 35px;
   }
+
   .main .info .subtitle {
     font-size: 20px;
   }
+
   .about .icons {
     flex-direction: column;
     gap: 32px;
     width: 100%;
   }
+
   .about .icons .icon-text {
     width: 100%;
   }
+
   .about .about-title,
   .skills .skills-title,
   .projects .projects-title,
@@ -605,20 +638,9 @@ footer {
     width: 100%;
     font-size: 25px;
   }
-  .projects {
-    height: 100%;
-  }
-  .projects .projects-top,
-  .projects .projects-bottom {
-    display: grid;
-    column-gap: 32px;
-    grid-template-rows: 50% 50%;
-    row-gap: 50px;
-    padding: 25px 0;
-  }
-  .projects-bottom {
-    margin-bottom: 30px;
-  }
+
+
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -626,22 +648,27 @@ footer {
     width: 50px;
     height: 50px;
   }
+
   .contact .contact-info .circle .contact-image {
     width: 25px;
     height: 25px;
   }
+
   .contact .contact-info .contact-text {
     font-size: 12px;
   }
+
   .formations .formation {
     grid-template-columns: 20% 60%;
   }
+
   .formations .formation .circle-min {
     display: none;
   }
 }
 
 @media only screen and (max-width: 550px) {
+
   .skills .skills-top,
   .skills .skills-middle,
   .skills .skills-bottom {
@@ -650,14 +677,17 @@ footer {
     row-gap: 32px;
     padding: 16px 0;
   }
+
   .skills .skill {
     place-self: center;
   }
+
   .projects .project,
   .projects .project img {
     width: 300px;
     height: 200px;
   }
+
   .contact {
     margin-top: 30px;
   }
@@ -667,6 +697,7 @@ footer {
 .project img {
   background-color: none;
 }
+
 .projects {
   margin-bottom: 30px;
 }
@@ -676,14 +707,17 @@ footer {
     display: grid;
     row-gap: 50px;
   }
+
   .contact .contact-group .circle {
     width: 70px;
     height: 70px;
   }
+
   .contact .contact-info .circle .contact-image {
     width: 35px;
     height: 35px;
   }
+
   .contact .contact-info .contact-text {
     font-size: 16px;
   }
