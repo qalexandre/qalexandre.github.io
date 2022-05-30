@@ -227,10 +227,24 @@ header{
   font-size: 27px;
 }
 
+.image-main img{
+  width: 450px;
+  height: 300px;
+  transition: transform .2s;
+}
+
+.image-main img:hover{
+  transform: scale(1.2);
+}
+
+
+
 .animation-system{
   position: relative;
   height: 350px;
   width: 350px;
+  transition: transform .2s;
+
 }
 
 .system-languages {
@@ -240,6 +254,10 @@ header{
   border-radius: 50%;
   border: 2px solid #2B9B62;
   animation: rotation 20s linear infinite;
+}
+
+.animation-system:hover{
+  transform: scale(1.1);
 }
 
 
@@ -258,7 +276,7 @@ header{
   height: 60px;
   width: 60px;
   animation: rotation 20s linear infinite reverse;
-  background-color: #130325;
+  background-color: #ffffff;
 }
 
 .language-1 {
@@ -295,6 +313,7 @@ header{
   background-color: #ffffff;
   width: 100%;
   height: 100%;
+  padding-bottom: 30px;
 }
 
 .about .about-title {
@@ -307,68 +326,39 @@ header{
 }
 
 .about .info {
-  margin: 50px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 40px;
 }
 
-.about .info .info-image {
-  width: 230px;
-  height: 230px;
-  border: 1px solid #2b9b62;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-}
 
 .about .info .info-text {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   width: 630px;
 }
 
-.about .icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 100px;
-}
-
-.about .icons .circle {
-  width: 115px;
-  height: 115px;
-  background: #2dd881;
-  border-radius: 50%;
-}
-
-.about .icons .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section-subtitle{
   text-align: center;
+  margin-top: -30px;
+
+  margin-bottom: 20px;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2b9b62;
+    text-align: center;
+    padding: 0 40px 40px 40px;
+
+  
 }
 
-.about .icons .icon .icon-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-}
 
-.about .icons .icon .icon-text {
-  padding: 10px;
-  font-family: "Sarala", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.about .icons .icon .icon-text-2 {
-  font-family: "Sarala", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
 
 .formations {
   background-color: #ffffff;
@@ -385,6 +375,7 @@ header{
   padding: 40px;
   border-top: 1px solid #2b9b62;
   margin: 0 auto;
+  width: 700px;
 }
 
 .formations-list {
@@ -414,6 +405,10 @@ header{
   text-align: center;
 }
 
+.formations .circle:hover .circle-icon{
+  transform: scale(1.2);
+}
+
 .formations .circle .circle-icon {
   width: 60px;
   height: 60px;
@@ -421,6 +416,8 @@ header{
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
+  transition: transform .2s
+  
 }
 
 .formations .formation .info {
@@ -445,6 +442,10 @@ header{
   text-align: center;
 }
 
+.formations .formation .circle-min:hover .circle-min-icon{
+  transform: scale(1.2);
+}
+
 .formations .formation .circle-min .circle-min-icon {
   width: 30px;
   height: 30px;
@@ -452,6 +453,89 @@ header{
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
+  transition: transform .2s
+}
+
+.experiences{
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.experiences .experiences-title{
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #2b9b62;
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #2b9b62;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.experiences-list{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experiences .experience {
+  display: grid;
+  grid-template-columns: 8% 35% 5%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+
+.experiences .circle .circle-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  transition: transform .2s
+}
+
+.experiences .circle .circle-icon:hover{
+  transform: scale(1.2);
+}
+
+.experiences .experience .info {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+}
+
+.experiences .experience .info .experience-title {
+  font-size: 21px;
+}
+
+.experiences .experience .info .experience-info {
+  font-size: 15px;
+}
+
+.experiences .experience .circle-min {
+  width: 50px;
+  height: 50px;
+  background: #2dd881;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.experiences .experience .circle-min:hover .circle-min-icon{
+  transform: scale(1.2);
+}
+
+.experiences .experience .circle-min .circle-min-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s
 }
 
 .skills {
@@ -473,17 +557,6 @@ header{
   margin: 0 auto;
 }
 
-.skills .skills-subtitle {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #2b9b62;
-  text-align: center;
-  padding: 0 40px 40px 40px;
-
-  width: 730px;
-  margin: 0 auto;
-}
 
 .skills .skills-top {
   padding: 30px 0;
@@ -513,6 +586,10 @@ header{
   border-radius: 50%;
 }
 
+.skills .circle:hover .skill-image{
+  transform: scale(1.2);
+}
+
 .skill .circle .skill-image {
   width: 115px;
   height: 115px;
@@ -520,6 +597,7 @@ header{
   margin-left: auto;
   margin-right: auto;
   padding: 25%;
+  transition: transform .2s;
 }
 
 .projects {
@@ -587,12 +665,17 @@ header{
   border-radius: 50%;
 }
 
+.contact .contact-info .circle:hover .contact-image{
+  transform: scale(1.2);
+}
+
 .contact .contact-info .circle .contact-image {
   width: 40px;
   height: 40px;
   display: block;
   margin: auto;
   margin-top: 25%;
+  transition: transform .2s;
 }
 
 .contact .contact-group {
@@ -635,9 +718,14 @@ footer {
   padding-right: 20px;
 }
 
+.socialmedia .socialmedia-image:hover{
+  transform: scale(1.2);
+}
+
 .socialmedia .socialmedia-image {
   width: 60px;
   height: 60px;
+  transition: transform .2s;
 }
 
 @media only screen and (max-width: 1100px) {
