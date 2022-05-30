@@ -110,7 +110,7 @@ body {
 .menu-mobile a {
   font-family: "Sarala", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
   display: block;
@@ -173,7 +173,7 @@ header{
 
   font-family: "Sarala", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   padding: 24px 50px 0 50px;
 }
@@ -196,8 +196,13 @@ header{
 .menu .menu-item {
   font-family: "Sarala", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
+  transition: all .2s;
+}
+
+.menu .menu-item:hover{
+  color: #2b9b62;
 }
 
 .main {
