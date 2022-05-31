@@ -917,6 +917,18 @@ footer {
   .formations .formation .circle-min {
     display: none;
   }
+
+  .experiences .experience {
+    grid-template-columns: 20% 60%;
+  }
+
+  .experiences .experience .circle-min {
+    display: none;
+  }
+
+  .section-subtitle{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 550px) {
