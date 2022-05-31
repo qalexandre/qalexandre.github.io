@@ -166,7 +166,7 @@ body {
   transition: 0.5s;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -178,11 +178,11 @@ header{
   padding: 24px 50px 0 50px;
 }
 
-.color-green{
- color: #2b9b62;
+.color-green {
+  color: #2b9b62;
 }
 
-.color-purple{
+.color-purple {
   color: #450EA2;
 }
 
@@ -201,7 +201,7 @@ header{
   transition: all .2s;
 }
 
-.menu .menu-item:hover{
+.menu .menu-item:hover {
   color: #2b9b62;
 }
 
@@ -232,19 +232,19 @@ header{
   font-size: 27px;
 }
 
-.image-main img{
+.image-main img {
   width: 450px;
   height: 300px;
   transition: transform .2s;
 }
 
-.image-main img:hover{
+.image-main img:hover {
   transform: scale(1.2);
 }
 
 
 
-.animation-system{
+.animation-system {
   position: relative;
   height: 350px;
   width: 350px;
@@ -261,7 +261,7 @@ header{
   animation: rotation 20s linear infinite;
 }
 
-.animation-system:hover{
+.animation-system:hover {
   transform: scale(1.1);
 }
 
@@ -304,12 +304,12 @@ header{
   left: 75%;
 }
 
-.language-5{
+.language-5 {
   top: 88%;
   left: 25%;
 }
 
-.language-6{
+.language-6 {
   top: -6%;
   left: 55%;
 }
@@ -347,20 +347,20 @@ header{
   width: 630px;
 }
 
-.section-subtitle{
+.section-subtitle {
   text-align: center;
   margin-top: -30px;
 
   margin-bottom: 20px;
 
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #2b9b62;
-    text-align: center;
-    padding: 0 40px 40px 40px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2b9b62;
+  text-align: center;
+  padding: 0 40px 40px 40px;
 
-  
+
 }
 
 
@@ -410,7 +410,7 @@ header{
   text-align: center;
 }
 
-.formations .circle:hover .circle-icon{
+.formations .circle:hover .circle-icon {
   transform: scale(1.2);
 }
 
@@ -422,7 +422,6 @@ header{
   margin-left: auto;
   margin-right: auto;
   transition: transform .2s
-  
 }
 
 .formations .formation .info {
@@ -447,7 +446,7 @@ header{
   text-align: center;
 }
 
-.formations .formation .circle-min:hover .circle-min-icon{
+.formations .formation .circle-min:hover .circle-min-icon {
   transform: scale(1.2);
 }
 
@@ -461,14 +460,14 @@ header{
   transition: transform .2s
 }
 
-.experiences{
+.experiences {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
   padding-bottom: 60px;
 }
 
-.experiences .experiences-title{
+.experiences .experiences-title {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -480,7 +479,7 @@ header{
   width: 700px;
 }
 
-.experiences-list{
+.experiences-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -503,7 +502,7 @@ header{
   transition: transform .2s
 }
 
-.experiences .circle .circle-icon:hover{
+.experiences .circle .circle-icon:hover {
   transform: scale(1.2);
 }
 
@@ -529,7 +528,7 @@ header{
   text-align: center;
 }
 
-.experiences .experience .circle-min:hover .circle-min-icon{
+.experiences .experience .circle-min:hover .circle-min-icon {
   transform: scale(1.2);
 }
 
@@ -591,7 +590,7 @@ header{
   border-radius: 50%;
 }
 
-.skills .circle:hover .skill-image{
+.skills .circle:hover .skill-image {
   transform: scale(1.2);
 }
 
@@ -636,7 +635,59 @@ header{
   width: 360px;
   height: 230px;
   background-color: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.projects .project a {
+  position: absolute;
+}
+
+
+
+.projects .project .project-options {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.4s linear;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.projects .project:hover .project-options {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project .project-options a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #2b9b62;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  transition: all 0.4s;
+}
+
+.project .project-options a:hover {
+  background-color: #58d193;
+
+}
+
+.project .project-options a img {
+  width: 50px;
+  height: 50px;
+}
+
 
 .contact {
   width: 100%;
@@ -670,7 +721,7 @@ header{
   border-radius: 50%;
 }
 
-.contact .contact-info .circle:hover .contact-image{
+.contact .contact-info .circle:hover .contact-image {
   transform: scale(1.2);
 }
 
@@ -723,7 +774,7 @@ footer {
   padding-right: 20px;
 }
 
-.socialmedia .socialmedia-image:hover{
+.socialmedia .socialmedia-image:hover {
   transform: scale(1.2);
 }
 
@@ -734,16 +785,17 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
-  .main{
+  .main {
 
     justify-content: center;
     align-items: center;
   }
-  .image-main{
+
+  .image-main {
     display: none;
   }
 
-  .presentation{
+  .presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -876,22 +928,23 @@ footer {
     font-size: 26px;
   }
 
-  .animation-system{
+  .animation-system {
     width: 200px;
     height: 200px;
   }
 
-  .system-languages{
+  .system-languages {
     width: 200px;
     height: 200px;
 
   }
-  .language{
+
+  .language {
     width: 30px;
     height: 30px;
   }
 
-  .pc{
+  .pc {
     width: 50px;
     height: 50px;
   }
@@ -951,9 +1004,7 @@ footer {
   }
 }
 
-#bg {
-
-}
+#bg {}
 
 @keyframes rotation {
   from {
